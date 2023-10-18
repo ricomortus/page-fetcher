@@ -8,7 +8,7 @@ async function fetcher(content) {
   try {
     const charCount = content.length;
     await fs.writeFile(localPath, content);
-    console.log(`Downloaded and saved ${charCount} bytes to ${localPath}`)
+    console.log(`Downloaded and saved ${charCount} bytes to $`)
   } catch (err) {
     console.log(err);
   }
